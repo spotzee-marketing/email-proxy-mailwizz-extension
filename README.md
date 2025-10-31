@@ -65,9 +65,9 @@ Send campaigns through MailWizz as usual - all bounce and complaint handling hap
 graph LR
     A[Your Application] -->|SMTP or HTTP API| B[Spotzee Proxy]
     B -->|Smart Routing| C[Provider/Email Account #1]
-    B -->|Smart Routing| D[Provider 2]
-    B -->|Smart Routing| E[Provider 3]
-    B -->|Auto-Failover| F[Provider N]
+    B -->|Smart Routing| D[Provider/Email Account #2]
+    B -->|Smart Routing| E[Provider/Email Account #3]
+    B -->|Auto-Failover| F[Provider/Email Account #N]
     C -->|Delivered| G[Recipients]
     D -->|Delivered| G
     E -->|Delivered| G
@@ -75,7 +75,7 @@ graph LR
 ```
 
 **One Endpoint, Multiple Providers**
-- Send via SMTP server (port 587) or HTTP API endpoint
+- Send via SMTP server (port 587/2525) or HTTP API endpoint
 - Your emails route automatically across all configured providers
 - Failed providers bypassed instantly with zero downtime
 
@@ -101,7 +101,7 @@ graph LR
 - Automatic scaling as your volume grows
 
 ### 🔧 Dual Integration Options
-- **SMTP Server** - Standard port 587, works with any email client
+- **SMTP Server** - Standard port 587 and Non-Standard port 2525
 - **HTTP REST API** - For programmatic sending
 - Same authentication for both methods
 
@@ -144,7 +144,7 @@ graph LR
 
 1. **Add Providers** - Configure your SMTP accounts with rate limits
 2. **Get Credentials** - Receive your API key
-3. **Start Sending** - Use SMTP (port 587) or HTTP API
+3. **Start Sending** - Use SMTP (port 587/2525) or HTTP API
 
 ### Pricing Example
 
@@ -158,8 +158,8 @@ graph LR
 
 ## Why Choose Spotzee Email Proxy?
 
-✅ **100% Deliverability** - Reliable queueing ensures delivery  
-✅ **SMTP or HTTP** - Use whichever fits your workflow  
+✅ **100% Email Deliverability** - Reliable queueing ensures delivery  
+✅ **SMTP or HTTP API** - Use whichever fits your workflow  
 ✅ **Human-Like Sending** - Randomized rates look natural  
 ✅ **Transparent Pricing** - $0.07 per 1,000 emails, nothing else  
 ✅ **Zero Downtime** - Automatic failover keeps emails flowing  
