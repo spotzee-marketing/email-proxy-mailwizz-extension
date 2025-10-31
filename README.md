@@ -1,6 +1,6 @@
 # Spotzee Email Proxy - MailWizz Extension
 
-Smart email delivery that routes through multiple providers automatically. **100% deliverability** through reliable queueing. Pay only $0.00007 per email ($0.07 per 1,000 emails) with no monthly fees.
+Smart email proxy for **cold email marketing** and outreach campaigns. Routes through multiple SMTP providers (Gmail, Outlook, Yahoo) with smart rate limiting and automatic failover. **100% email deliverability** through reliable queueing. Pay only $0.00007 per email ($0.07 per 1,000 emails) with no monthly fees.
 
 ## Quick Start Guide
 
@@ -74,6 +74,41 @@ graph LR
     F -->|Delivered| G
 ```
 
+## Supported Providers
+
+### SMTP Email Accounts (Available Now)
+Connect unlimited SMTP accounts from any provider:
+- **Gmail** - Personal and Google Workspace accounts
+- **Outlook/Office 365** - Microsoft email accounts
+- **Yahoo Mail** - Yahoo SMTP accounts
+- **Custom SMTP** - Any SMTP provider (Mailgun, SparkPost, etc.)
+
+### API Email Providers (Coming Soon)
+Direct API integration for enhanced deliverability:
+- **SendGrid**
+- **Mailgun**
+- **Amazon SES**
+- **Resend**
+- **Postmark**
+- **SparkPost**
+- **Mandrill**
+- **Mailjet**
+- **Brevo** (Sendinblue)
+- **SMTP.com**
+- **SocketLabs**
+- **Elastic Email**
+- **Pepipost**
+- **MailerSend**
+- **MailerLite**
+- **ActiveCampaign**
+- **Mailchimp**
+- **Klaviyo**
+- **Campaign Monitor**
+- **Moosend**
+- **And more...**
+
+---
+
 **One Endpoint, Multiple Providers**
 - Send via SMTP server (port 587/2525) or HTTP API endpoint
 - Your emails route automatically across all configured providers
@@ -83,6 +118,26 @@ graph LR
 - Configure rate limit ranges (e.g., "2-3 per hour", "20-25 per day")
 - System randomizes sending rate every 5 minutes within your range
 - Appears natural to email providers, improves deliverability
+
+## Smart Routing & Groups
+
+**Group Your Providers by Purpose**
+
+Organize email accounts into custom groups (Marketing, Transactional, Customer Support, etc.) and route emails intelligently based on email headers.
+
+**How It Works:**
+- Create groups like "Marketing", "Transactional", "Notifications"
+- Assign provider accounts to each group
+- Add custom email header `X-Delivery-Route` with the group ID
+- Emails automatically route through the designated group's providers
+
+**Use Cases:**
+- **Marketing Campaigns** - Route through dedicated marketing provider accounts
+- **Transactional Emails** - Send receipts and notifications through high-priority transactional accounts
+- **Customer Support** - Separate reply/support emails from bulk campaigns
+- **Client Segregation** - Agencies can isolate client campaigns for better reputation management
+
+This ensures marketing campaigns never impact transactional email deliverability, and you maintain separate sending reputations for different email types.
 
 ## Key Benefits
 
@@ -129,6 +184,12 @@ graph LR
 - Detailed delivery logs
 
 ## Who It's For
+
+**Cold Email Marketers** - Scale outreach campaigns across Gmail, Outlook, Yahoo accounts with smart rate limiting that mimics human sending patterns. Prevent provider bans and maximize inbox placement.
+
+**Cold Email Agencies** - Manage multiple client campaigns with per-account quotas, automatic failover, and transparent per-email billing. No monthly fees mean you only pay for active campaigns.
+
+**Lead Generation Teams** - B2B outbound sales automation with multi-SMTP rotation, bounce handling, and detailed delivery tracking for every prospect interaction.
 
 **SaaS Applications** - Transactional emails (password resets, notifications) delivered reliably.
 
