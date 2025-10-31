@@ -1,0 +1,29 @@
+{
+    "name": "spotzee/mailwizz-email-proxy-api",
+    "description": "Spotzee Email Proxy API Extension for MailWizz - Integrates email delivery with automatic bounce and complaint handling",
+    "type": "mailwizz-extension",
+    "license": "FSL-2.0",
+    "authors": [
+        {
+            "name": "Spotzee Team",
+            "email": "contact@spotzee.com",
+            "homepage": "https://spotzee.com"
+        }
+    ],
+    "keywords": [
+        "mailwizz",
+        "email",
+        "delivery",
+        "bounce-handling",
+        "webhooks",
+        "spotzee"
+    ],
+    "homepage": "https://spotzee.com",
+    "support": {
+        "email": "contact@spotzee.com",
+        "source": "https://github.com/spotzee/mailwizz-email-proxy-api"
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}
