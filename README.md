@@ -38,7 +38,7 @@ Sign up for a [Spotzee](https://app.spotzee.com/sign-up) account
 
 ### 6. Add to MailWizz
 - In MailWizz, go to **Delivery Servers → Create New**
-- Select **Spotzee Email Proxy API**
+- Select **Spotzee Web API**
 - Enter your username and password from step 4
 - Save
 
@@ -64,7 +64,7 @@ Send campaigns through MailWizz as usual - all bounce and complaint handling hap
 ```mermaid
 graph LR
     A[Your Application] -->|SMTP or HTTP API| B[Spotzee Proxy]
-    B -->|Smart Routing| C[Provider 1]
+    B -->|Smart Routing| C[Provider/Email Account #1]
     B -->|Smart Routing| D[Provider 2]
     B -->|Smart Routing| E[Provider 3]
     B -->|Auto-Failover| F[Provider N]
