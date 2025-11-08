@@ -1,4 +1,4 @@
-# Spotzee Email Proxy - MailWizz Extension
+# Spotzee HTTP/SMTP Email Proxy - MailWizz Extension
 
 Smart email proxy for **cold email marketing** and outreach campaigns. Routes through multiple SMTP providers (Gmail, Outlook, Yahoo) with smart rate limiting and automatic failover. **100% email deliverability** through reliable queueing. Pay only $0.00007 per email ($0.07 per 1,000 emails) with no monthly fees.
 
@@ -49,7 +49,7 @@ Send campaigns through MailWizz as normal. View delivery logs in Spotzee by clic
 
 ## MailWizz Integration
 
-This extension seamlessly integrates MailWizz with Spotzee Email Proxy API:
+This extension seamlessly integrates MailWizz with Spotzee HTTP/SMTP Email Proxy API:
 
 - **Simple Setup** - Add your Spotzee credentials as a delivery server in MailWizz
 - **Automatic Bounce Handling** - Hard/soft bounces are logged and subscribers are blacklisted automatically
@@ -217,7 +217,7 @@ This ensures marketing campaigns never impact transactional email deliverability
 **1 million emails per month:**
 - Cost: 1,000,000 × $0.00007 = **$70.00/month** ($0.07 per 1,000 emails)
 
-## Why Choose Spotzee Email Proxy?
+## Why Choose Spotzee HTTP/SMTP Email Proxy?
 
 ✅ **100% Email Deliverability** - Reliable queueing ensures delivery  
 ✅ **SMTP or HTTP API** - Use whichever fits your workflow  
